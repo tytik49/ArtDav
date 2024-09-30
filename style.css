@@ -1,19 +1,17 @@
-/* Основные стили для тёмной темы с синими акцентами */
 body {
-    font-family: 'Roboto', sans-serif; /* Современный шрифт */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1f1f1f; /* Тёмно-серый фон */
-    color: #e0e0e0; /* Светлый текст */
+    background-color: #1f1f1f;
+    color: #e0e0e0;
 }
 
-/* Стили шапки сайта */
 header {
-    background: linear-gradient(135deg, #0077cc, #004488); /* Синий градиент */
+    background: linear-gradient(135deg, #0077cc, #004488);
     color: #fff;
     padding: 1.5em 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Тень */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 nav ul {
@@ -34,7 +32,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00ccff; /* Синий цвет при наведении */
+    color: #00ccff;
 }
 
 main {
@@ -43,24 +41,22 @@ main {
     margin: 0 auto;
 }
 
-/* Заголовки с акцентами */
 h1, h2 {
-    color: #00ccff; /* Светло-синий для заголовков */
+    color: #00ccff;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Стили секций */
 section {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #2a2a2a; /* Темный фон для секций */
+    background-color: #2a2a2a;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Мягкие тени */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 p, ul, table {
-    color: #e0e0e0; /* Светлый текст */
+    color: #e0e0e0;
 }
 
 ul {
@@ -68,11 +64,6 @@ ul {
     padding: 0;
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Стили для таблиц */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -87,24 +78,15 @@ table, th, td {
 
 th {
     background-color: #333;
-    color: #00ccff; /* Синие заголовки таблиц */
+    color: #00ccff;
 }
 
-td {
-    background-color: #444; /* Темные ячейки */
-}
-
-td, th {
-    border-radius: 5px; /* Закруглённые углы */
-}
-
-/* Стили подвала */
 footer {
-    background-color: #101010; /* Очень тёмный фон */
-    color: #00ccff; /* Синий текст */
+    background-color: #101010;
+    color: #00ccff;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Тень сверху */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
     position: relative;
     bottom: 0;
     width: 100%;
