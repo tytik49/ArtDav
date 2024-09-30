@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Продажа сварной сетки</title>
+    <title>Сетка армирующая сварная для железобетонных конструкций</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,10 +33,12 @@
             color: #f0f0f0;
             margin: 0 15px;
             text-decoration: none;
+            transition: color 0.3s; /* Плавный переход цвета */
         }
 
         nav a:hover {
             text-decoration: underline;
+            color: #ffffff; /* Цвет при наведении */
         }
 
         main {
@@ -80,10 +82,25 @@
             margin-top: 40px;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Предотвращаем стандартное поведение ссылки
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' }); // Плавный скроллинг
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1>Продажа сварной сетки</h1>
+        <h1>Сетка армирующая сварная для железобетонных конструкций</h1>
         <nav>
             <a href="#about">О нас</a>
             <a href="#products">Наша продукция</a>
@@ -224,7 +241,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Продажа сварной сетки. Все права защищены.</p>
+        <p>&copy; 2024 Сетка армирующая сварная для железобетонных конструкций. Все права защищены.</p>
     </footer>
 </body>
 </html>
