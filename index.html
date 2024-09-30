@@ -7,96 +7,56 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1e1e2f;
-            color: #f0f0f0;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+            background-color: #f4f4f4;
         }
-
         header {
-            background-color: #007acc;
-            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
         nav {
-            margin: 20px 0;
+            margin: 10px 0;
         }
-
         nav a {
-            color: #f0f0f0;
+            color: #fff;
             margin: 0 15px;
             text-decoration: none;
-            transition: color 0.3s; /* Плавный переход цвета */
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            transition: border 0.3s;
         }
-
         nav a:hover {
-            text-decoration: underline;
-            color: #ffffff; /* Цвет при наведении */
+            border: 1px solid #fff;
         }
-
-        main {
+        section {
             padding: 20px;
-            max-width: 800px;
-            margin: auto;
+            margin: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
         h2 {
-            color: #007acc;
-            font-size: 2em;
+            color: #333;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 40px;
+            margin: 20px 0;
         }
-
+        table, th, td {
+            border: 1px solid #ccc;
+        }
         th, td {
-            border: 1px solid #007acc;
             padding: 10px;
-            text-align: center;
+            text-align: left;
         }
-
         th {
-            background-color: #007acc;
-            color: white;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #007acc;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .contact-info {
-            margin-top: 40px;
+            background-color: #f2f2f2;
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const links = document.querySelectorAll('nav a');
-            links.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault(); // Предотвращаем стандартное поведение ссылки
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({ behavior: 'smooth' }); // Плавный скроллинг
-                    }
-                });
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -104,144 +64,202 @@
         <nav>
             <a href="#about">О нас</a>
             <a href="#products">Наша продукция</a>
+            <a href="#reviews">Отзывы клиентов</a>
+            <a href="#faq">Часто задаваемые вопросы</a>
+            <a href="#blog">Блог</a>
             <a href="#contacts">Контакты</a>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Мы занимаемся продажей высококачественной сварной сетки, используемой в строительстве и для других нужд.</p>
-        </section>
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы — компания, специализирующаяся на производстве и продаже сварной арматурной сетки для железобетонных конструкций. Наша продукция обеспечивает надежность и прочность строительных объектов.</p>
+    </section>
 
-        <section id="products">
-            <h2>Наша продукция</h2>
-            <p>Сетка армирующая сварная для железобетонных конструкций:</p>
-            <table>
-                <tr>
-                    <th>Тип сетки</th>
-                    <th>Размер</th>
-                </tr>
-                <tr>
-                    <td>∅3, ячейка 100*100</td>
-                    <td>1м-2м</td>
-                </tr>
-                <tr>
-                    <td>∅4, ячейка 150*150</td>
-                    <td>0,90м*2м</td>
-                </tr>
-                <tr>
-                    <td>∅4, ячейка 100*100</td>
-                    <td>1м*2м и 2м-3м</td>
-                </tr>
-                <tr>
-                    <td>∅4, ячейка 50*50</td>
-                    <td>2м*3м</td>
-                </tr>
-                <tr>
-                    <td>∅4, ячейка 50*100</td>
-                    <td>2м*3м</td>
-                </tr>
-                <tr>
-                    <td>∅4, ячейка 150*150</td>
-                    <td>2м*3м</td>
-                </tr>
-                <tr>
-                    <td>∅4, ячейка 50*50 и 100*100</td>
-                    <td>0,38м*2м</td>
-                </tr>
-                <tr>
-                    <td>∅5, ячейка 50/50</td>
-                    <td>2м-3м</td>
-                </tr>
-                <tr>
-                    <td>∅5, ячейка 100/100</td>
-                    <td>2м-3м</td>
-                </tr>
-                <tr>
-                    <td>∅5, ячейка 150/150</td>
-                    <td>2м-3м</td>
-                </tr>
-            </table>
+    <section id="products">
+        <h2>Наша продукция</h2>
+        <h3>Сетка армирующая сварная для железобетонных конструкций:</h3>
+        <table>
+            <tr>
+                <th>Тип сетки</th>
+                <th>Размер (м)</th>
+                <th>Ячейка (мм)</th>
+            </tr>
+            <tr>
+                <td>∅3</td>
+                <td>1м-2м</td>
+                <td>100x100</td>
+            </tr>
+            <tr>
+                <td>∅4</td>
+                <td>0,90м*2м</td>
+                <td>150x150</td>
+            </tr>
+            <tr>
+                <td>∅4</td>
+                <td>1м*2м, 2м-3м</td>
+                <td>100x100</td>
+            </tr>
+            <tr>
+                <td>∅4</td>
+                <td>2м*3м</td>
+                <td>50x50</td>
+            </tr>
+            <tr>
+                <td>∅4</td>
+                <td>2м*3м</td>
+                <td>50x100</td>
+            </tr>
+            <tr>
+                <td>∅4</td>
+                <td>2м*3м</td>
+                <td>150x150</td>
+            </tr>
+            <tr>
+                <td>∅4</td>
+                <td>0,38м*2м</td>
+                <td>50x50 и 100x100</td>
+            </tr>
+            <tr>
+                <td>∅5</td>
+                <td>2м-3м</td>
+                <td>50x50</td>
+            </tr>
+            <tr>
+                <td>∅5</td>
+                <td>2м-3м</td>
+                <td>100x100</td>
+            </tr>
+            <tr>
+                <td>∅5</td>
+                <td>2м-3м</td>
+                <td>150x150</td>
+            </tr>
+        </table>
+        <h3>В рулонах (мм):</h3>
+        <table>
+            <tr>
+                <th>Тип сетки</th>
+                <th>Размер (м)</th>
+                <th>Ячейка (мм)</th>
+            </tr>
+            <tr>
+                <td>∅1</td>
+                <td>1м*10м</td>
+                <td>25x25</td>
+            </tr>
+            <tr>
+                <td>∅1</td>
+                <td>1м*10м</td>
+                <td>50x50</td>
+            </tr>
+            <tr>
+                <td>∅3</td>
+                <td>1,5м*20м</td>
+                <td>100x100</td>
+            </tr>
+            <tr>
+                <td>∅3</td>
+                <td>1,5м/40м</td>
+                <td>100x100</td>
+            </tr>
+            <tr>
+                <td>∅3</td>
+                <td>40см/40м</td>
+                <td>(16м² в рулоне)</td>
+            </tr>
+            <tr>
+                <td>∅1,8</td>
+                <td>1м*10м</td>
+                <td>25x10</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,6</td>
+                <td>1м*10м</td>
+                <td>50x50</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,6</td>
+                <td>1м*10м</td>
+                <td>50x25</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,4</td>
+                <td>1м*10м</td>
+                <td>25x25</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,4</td>
+                <td>1м*10м</td>
+                <td>25x10</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,2</td>
+                <td>1м*10м</td>
+                <td>25x25</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,2</td>
+                <td>1м*10м</td>
+                <td>25x10</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,8</td>
+                <td>1м*10м</td>
+                <td>25x25</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,8</td>
+                <td>1м*10м</td>
+                <td>25x10</td>
+            </tr>
+            <tr>
+                <td>Оцинковка ∅1,2</td>
+                <td>1м*10м</td>
+                <td>10x10</td>
+            </tr>
+        </table>
+    </section>
 
-            <h2>Сетки в рулонах</h2>
-            <table>
-                <tr>
-                    <th>Тип сетки</th>
-                    <th>Размер</th>
-                </tr>
-                <tr>
-                    <td>∅1, 25/25яч</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>∅1, 50/50яч</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>∅3, 100/100яч</td>
-                    <td>1,5м*20м (30м² в рулоне)</td>
-                </tr>
-                <tr>
-                    <td>∅3</td>
-                    <td>1,5м*40м (60м² в рулоне)</td>
-                </tr>
-                <tr>
-                    <td>∅3</td>
-                    <td>40см*40м (16м² в рулоне)</td>
-                </tr>
-                <tr>
-                    <td>∅1,8, 25*10яч</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1,6, 50*50</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1,6, 50*25</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1,4, 25*25</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1.4, 25*10</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1.2, 25*25</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1.2, 25*10</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1.8, 25*25</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1.8, 25*10</td>
-                    <td>1м*10м</td>
-                </tr>
-                <tr>
-                    <td>Оцинковка ∅1.2, 10*10</td>
-                    <td>1м*10м</td>
-                </tr>
-            </table>
-        </section>
+    <section id="reviews">
+        <h2>Отзывы клиентов</h2>
+        <p>«Отличное качество продукции! Используем сетку для строительства и очень довольны.» - Игорь П.</p>
+        <p>«Скорость доставки была впечатляющей. Рекомендую!» - Мария С.</p>
+        <p>«Продукция соответствует заявленным характеристикам. Спасибо!» - Алексей Т.</p>
+    </section>
 
-        <section id="contacts" class="contact-info">
-            <h2>Контакты</h2>
-            <p>Телефон: <a href="tel:+123456789">+123456789</a></p>
-            <p>Электронная почта: <a href="mailto:info@example.com">info@example.com</a></p>
-        </section>
-    </main>
+    <section id="faq">
+        <h2>Часто задаваемые вопросы (FAQ)</h2>
+        <h3>Как выбрать правильную сетку?</h3>
+        <p>Выбор сетки зависит от предполагаемого использования. Для более тяжёлых конструкций лучше использовать сетку с большими ячейками и диаметром проволоки.</p>
+        
+        <h3>Как производится доставка?</h3>
+        <p>Мы предлагаем различные варианты доставки, включая курьерскую службу и транспортные компании. Согласуйте детали при оформлении заказа.</p>
+        
+        <h3>Есть ли гарантии на продукцию?</h3>
+        <p>Да, мы предоставляем гарантию на все виды нашей продукции. В случае брака или несоответствия характеристикам мы обменяем товар.</p>
+        
+        <h3>Как можно заказать продукцию?</h3>
+        <p>Вы можете сделать заказ через наш сайт или позвонить по указанным на странице контактам.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Сетка армирующая сварная для железобетонных конструкций. Все права защищены.</p>
-    </footer>
+    <section id="blog">
+        <h2>Блог</h2>
+        <article>
+            <h3>5 преимуществ использования сварной сетки в строительстве</h3>
+            <p>Сварная сетка имеет множество преимуществ, включая высокую прочность, легкость в использовании и доступность. В этой статье мы расскажем о ее основных достоинствах...</p>
+        </article>
+        <article>
+            <h3>Как правильно укладывать армирующую сетку?</h3>
+            <p>Укладка армирующей сетки - это важный этап в процессе строительства. Мы расскажем о правильных методах укладки и о том, на что следует обратить внимание...</p>
+        </article>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Если у вас есть вопросы или вы хотите сделать заказ, свяжитесь с нами:</p>
+        <p>Email: info@example.com</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+    </section>
 </body>
 </html>
