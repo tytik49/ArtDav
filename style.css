@@ -1,17 +1,19 @@
-/* Основные стили для тёмной темы */
+/* Основные стили для тёмной темы с синими акцентами */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Современный шрифт */
     margin: 0;
     padding: 0;
-    background-color: #2e2e2e; /* Тёмно-серый фон */
-    color: #ddd; /* Светлый текст */
+    background-color: #1f1f1f; /* Тёмно-серый фон */
+    color: #e0e0e0; /* Светлый текст */
 }
 
+/* Стили шапки сайта */
 header {
-    background-color: #1a1a1a; /* Очень тёмно-серый для шапки */
-    color: #00aaff; /* Синий цвет текста */
-    padding: 1em 0;
+    background: linear-gradient(135deg, #0077cc, #004488); /* Синий градиент */
+    color: #fff;
+    padding: 1.5em 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Тень */
 }
 
 nav ul {
@@ -20,53 +22,90 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 15px;
 }
 
 nav ul li a {
-    color: #00aaff; /* Синие ссылки */
+    color: #fff;
     text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ccff; /* Синий цвет при наведении */
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Заголовки с акцентами */
 h1, h2 {
-    color: #00aaff; /* Синие заголовки */
+    color: #00ccff; /* Светло-синий для заголовков */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили секций */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #2a2a2a; /* Темный фон для секций */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Мягкие тени */
 }
 
 p, ul, table {
-    color: #ddd; /* Светлый текст */
+    color: #e0e0e0; /* Светлый текст */
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Стили для таблиц */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
 table, th, td {
-    border: 1px solid #444; /* Тёмная рамка для таблицы */
-    padding: 10px;
+    border: 1px solid #444;
+    padding: 15px;
     text-align: left;
 }
 
 th {
-    background-color: #333; /* Тёмно-серый для заголовков таблицы */
-    color: #00aaff; /* Синий текст заголовков */
+    background-color: #333;
+    color: #00ccff; /* Синие заголовки таблиц */
 }
 
 td {
-    background-color: #444; /* Фон для ячеек */
+    background-color: #444; /* Темные ячейки */
 }
 
+td, th {
+    border-radius: 5px; /* Закруглённые углы */
+}
+
+/* Стили подвала */
 footer {
-    background-color: #1a1a1a; /* Тёмная подложка */
-    color: #00aaff; /* Синий текст в подвале */
+    background-color: #101010; /* Очень тёмный фон */
+    color: #00ccff; /* Синий текст */
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Тень сверху */
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
