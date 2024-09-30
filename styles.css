@@ -13,6 +13,21 @@ header {
     text-align: center;
 }
 
+nav ul {
+    list-style-type: none; /* Убираем маркеры у списка навигации */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Горизонтальное расположение элементов меню */
+    margin-right: 20px; /* Отступ между пунктами меню */
+}
+
+nav ul li a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
 h1, h2, h3 {
     margin: 10px 0;
 }
