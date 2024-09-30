@@ -1,15 +1,15 @@
-/* Основные стили */
+/* Основные стили для тёмной темы */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #2e2e2e; /* Тёмно-серый фон */
+    color: #ddd; /* Светлый текст */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #1a1a1a; /* Очень тёмно-серый для шапки */
+    color: #00aaff; /* Синий цвет текста */
     padding: 1em 0;
     text-align: center;
 }
@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00aaff; /* Синие ссылки */
     text-decoration: none;
 }
 
@@ -34,7 +34,11 @@ main {
 }
 
 h1, h2 {
-    color: #333;
+    color: #00aaff; /* Синие заголовки */
+}
+
+p, ul, table {
+    color: #ddd; /* Светлый текст */
 }
 
 table {
@@ -43,19 +47,23 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #333;
+    border: 1px solid #444; /* Тёмная рамка для таблицы */
     padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #555;
-    color: #fff;
+    background-color: #333; /* Тёмно-серый для заголовков таблицы */
+    color: #00aaff; /* Синий текст заголовков */
+}
+
+td {
+    background-color: #444; /* Фон для ячеек */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #1a1a1a; /* Тёмная подложка */
+    color: #00aaff; /* Синий текст в подвале */
     text-align: center;
     padding: 10px 0;
     position: fixed;
