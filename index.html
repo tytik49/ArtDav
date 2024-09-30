@@ -138,12 +138,9 @@
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                const offset = 10; // Отступ для скролла
-                const elementPosition = targetSection.getBoundingClientRect().top + window.scrollY;
-                const offsetPosition = elementPosition - offset;
 
-                window.scrollTo({
-                    top: offsetPosition,
+                // Плавный скролл к целевому разделу
+                targetSection.scrollIntoView({
                     behavior: 'smooth' // Плавный скролл
                 });
             });
