@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2025-06-27 12:00">
+  <shop>
+    <name>Сетка Арматурная</name>
+    <company>ИП Тутик</company>
+    <url>https://example.com</url>
+    <currencies>
+      <currency id="KZT" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="1">Сетки в листах</category>
+      <category id="2">Сетки в рулонах</category>
+    </categories>
+    <offers>
+      <offer id="1001" available="true">
+        <name>Сетка ∅3, 100×100, 1м-2м</name>
+        <price>1200</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>1</categoryId>
+      </offer>
+      <offer id="1002" available="true">
+        <name>Сетка ∅4, 150×150, 0,9×2м</name>
+        <price>1800</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>1</categoryId>
+      </offer>
+      <offer id="2001" available="true">
+        <name>Сетка ∅1, 25×25, 1×10м (рулон)</name>
+        <price>950</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>2</categoryId>
+      </offer>
+      <offer id="2002" available="true">
+        <name>Сетка ∅3, 100×100, 1.5×20м (рулон)</name>
+        <price>3600</price>
+        <currencyId>KZT</currencyId>
+        <categoryId>2</categoryId>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
