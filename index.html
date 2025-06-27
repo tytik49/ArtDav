@@ -8,11 +8,7 @@
   <title>Сетка армирующая сварная</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f4f6f9;
@@ -24,6 +20,18 @@
       color: white;
       padding: 30px 20px;
       position: relative;
+    }
+    .support-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #cccccc;
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 6px;
     }
     .user-menu {
       position: absolute;
@@ -134,6 +142,7 @@
 </head>
 <body>
   <header>
+    <button class="support-btn" onclick="location.href='kaspi.html'">💛 Поддержать автора</button>
     <div class="user-menu">
       <button id="userIcon">👤</button>
       <div id="dropdownMenu" class="dropdown">
@@ -160,52 +169,43 @@
   </section>
 
   <section id="products">
-  <h2>Наша продукция</h2>
+    <h2>Наша продукция</h2>
+    <h3>Сетки в листах</h3>
+    <div class="table-wrapper">
+      <table>
+        <tr><th>Диаметр</th><th>Ячейка</th><th>Размер</th></tr>
+        <tr><td>∅3</td><td>100×100</td><td>1м-2м</td></tr>
+        <tr><td>∅4</td><td>150×150</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅4</td><td>100×100</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅4</td><td>50×50</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅4</td><td>50×100</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅4</td><td>150×150</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅4</td><td>50×50 и 100×100</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅5</td><td>50×50</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅5</td><td>100×100</td><td>Размер уточняйте</td></tr>
+        <tr><td>∅5</td><td>150×150</td><td>Размер уточняйте</td></tr>
+      </table>
+    </div>
 
-  <h3>Сетки в листах</h3>
-  <div class="table-wrapper">
-    <table>
-      <tr>
-        <th>Диаметр</th>
-        <th>Ячейка</th>
-        <th>Размер</th>
-      </tr>
-      <tr><td>∅3</td><td>100×100</td><td>1м-2м</td></tr>
-      <tr><td>∅4</td><td>150×150</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅4</td><td>100×100</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅4</td><td>50×50</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅4</td><td>50×100</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅4</td><td>150×150</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅4</td><td>50×50 и 100×100</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅5</td><td>50×50</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅5</td><td>100×100</td><td>Размер уточняйте</td></tr>
-      <tr><td>∅5</td><td>150×150</td><td>Размер уточняйте</td></tr>
-    </table>
-  </div>
-
-  <h3>Сетки в рулонах</h3>
-  <div class="table-wrapper">
-    <table>
-      <tr>
-        <th>Диаметр</th>
-        <th>Ячейка</th>
-        <th>Размер</th>
-      </tr>
-      <tr><td>∅1</td><td>25×25</td><td>1×10м</td></tr>
-      <tr><td>∅1</td><td>50×50</td><td>1×10м</td></tr>
-      <tr><td>∅3</td><td>100×100</td><td>1,5×20м (30м²)</td></tr>
-      <tr><td>∅3</td><td>-</td><td>1,5×40м (60м²)</td></tr>
-      <tr><td>∅3</td><td>-</td><td>0,4×40м (16м²)</td></tr>
-      <tr><td>∅1,8</td><td>25×10</td><td>1×10м</td></tr>
-      <tr><td>Оцинк. ∅1,6</td><td>50×50</td><td>1×10м</td></tr>
-      <tr><td>Оцинк. ∅1,6</td><td>50×25</td><td>1×10м</td></tr>
-      <tr><td>Оцинк. ∅1,4</td><td>25×25</td><td>1×10м</td></tr>
-      <tr><td>Оцинк. ∅1,4</td><td>25×10</td><td>1×10м</td></tr>
-      <tr><td>Оцинк. ∅1,2</td><td>25×25</td><td>1×10м</td></tr>
-      <tr><td>Оцинк. ∅1,2</td><td>25×10</td><td>1×10м</td></tr>
-    </table>
-  </div>
-</section>
+    <h3>Сетки в рулонах</h3>
+    <div class="table-wrapper">
+      <table>
+        <tr><th>Диаметр</th><th>Ячейка</th><th>Размер</th></tr>
+        <tr><td>∅1</td><td>25×25</td><td>1×10м</td></tr>
+        <tr><td>∅1</td><td>50×50</td><td>1×10м</td></tr>
+        <tr><td>∅3</td><td>100×100</td><td>1,5×20м (30м²)</td></tr>
+        <tr><td>∅3</td><td>-</td><td>1,5×40м (60м²)</td></tr>
+        <tr><td>∅3</td><td>-</td><td>0,4×40м (16м²)</td></tr>
+        <tr><td>∅1,8</td><td>25×10</td><td>1×10м</td></tr>
+        <tr><td>Оцинк. ∅1,6</td><td>50×50</td><td>1×10м</td></tr>
+        <tr><td>Оцинк. ∅1,6</td><td>50×25</td><td>1×10м</td></tr>
+        <tr><td>Оцинк. ∅1,4</td><td>25×25</td><td>1×10м</td></tr>
+        <tr><td>Оцинк. ∅1,4</td><td>25×10</td><td>1×10м</td></tr>
+        <tr><td>Оцинк. ∅1,2</td><td>25×25</td><td>1×10м</td></tr>
+        <tr><td>Оцинк. ∅1,2</td><td>25×10</td><td>1×10м</td></tr>
+      </table>
+    </div>
+  </section>
 
   <section id="faq">
     <h2>Часто задаваемые вопросы</h2>
@@ -219,7 +219,6 @@
       <li>"Купили для стройки — всё отлично." — Ольга С.</li>
       <li>"Рекомендую, всё как на фото." — Сергей К.</li>
     </ul>
-
     <h3>Оставьте свой отзыв</h3>
     <button onclick="location.href='register.html'">Зарегистрироваться, чтобы оставить отзыв</button>
   </section>
@@ -241,11 +240,9 @@
   <script>
     const userIcon = document.getElementById('userIcon');
     const dropdownMenu = document.getElementById('dropdownMenu');
-
     userIcon.addEventListener('click', () => {
       dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
-
     document.addEventListener('click', (e) => {
       if (!userIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
         dropdownMenu.style.display = 'none';
